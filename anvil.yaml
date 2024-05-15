@@ -22,14 +22,22 @@ db_schema:
     - name: name
       admin_ui: {width: 200, order: 0}
       type: string
-    - name: weight
+    - name: email
       admin_ui: {width: 200, order: 1}
+      type: string
+    - name: weight
+      admin_ui: {width: 200, order: 2}
       type: number
     - name: address
-      admin_ui: {width: 200, order: 2}
+      admin_ui: {width: 200, order: 3}
       type: string
     - name: personal
-      admin_ui: {width: 200, order: 3}
+      admin_ui: {width: 200, order: 4}
       type: bool
     title: gym
+  table_2:
+    client: none
+    server: full
+    columns: []
+    title: Table 2
 renamed: true

@@ -17,6 +17,14 @@ components:
     properties: {placeholder: enter your name}
     type: TextBox
     layout_properties: {grid_position: 'LCXUJS,FQUYSI'}
+  - name: label_9
+    properties: {text: 'EMAIL ID :'}
+    type: Label
+    layout_properties: {grid_position: 'TGSOAT,FVQNTM'}
+  - name: text_box_3
+    properties: {placeholder: EMAIL ID}
+    type: TextBox
+    layout_properties: {grid_position: 'CTIBOB,EIHGZH'}
   - name: label_2
     properties: {text: 'ENTER YOUR WEIGHT : ', bold: false}
     type: Label

@@ -12,8 +12,8 @@ import anvil.server
 # Here is an example - you can replace it with your own:
 #
 @anvil.server.callable
-def submit(name,weight,address,personal):
-  app_tables.gym.add_row(name=name,weight=weight,address=address,personal=personal)
+def submit(name,email,weight,address,personal):
+  app_tables.gym.add_row(name=name,email=email,weight=weight,address=address,personal=personal)
   anvil.email.send(from_name="MYGYM FORM",
                  to="sumanthusorab@gmail.com",
                  subject="Your form",

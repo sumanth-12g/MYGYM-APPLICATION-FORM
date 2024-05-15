@@ -16,10 +16,11 @@ class Form1(Form1Template):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     name = self.text_box_1.text
+    email = self.text_box_3.text
     weight = self.text_box_2.text
     address = self.text_area_1.text
     personal = self.check_box_1.checked
-    anvil.server.call('submit',name,weight,address,personal)
+    anvil.server.call('submit',name,email,weight,address,personal)
     Notification("data has been submitted successfully").show()
 
 
