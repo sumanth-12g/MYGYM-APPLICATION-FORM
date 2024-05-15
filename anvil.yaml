@@ -3,11 +3,16 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {custom_smtp: false}
 package_name: M3_App_1
 allow_embedding: false
-name: ''
+name: MYGYM MEMBERSHIP FROM
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
+metadata: {title: MYGYM, description: 'Good gym in bangalore, provide good services
+    to our customers.', logo_img: 'https://th.bing.com/th/id/OIP.HOVba4VgeTakpJZzEpWeZwHaE8?rs=1&pid=ImgDetMain'}
 startup_form: Form1
 db_schema:
   gym:
