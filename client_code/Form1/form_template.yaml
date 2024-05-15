@@ -7,7 +7,11 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: label_1
+    properties: {text: 'ENTER A NAME :'}
+    type: Label
+    layout_properties: {grid_position: 'UVXZFI,SPIBCX'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
