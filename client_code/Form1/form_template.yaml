@@ -22,17 +22,17 @@ components:
     type: Label
     layout_properties: {grid_position: 'NXVCJO,QGVVDJ'}
   - name: text_box_2
-    properties: {placeholder: enter your wight in ( kilograms )}
+    properties: {placeholder: enter your weight in (kilograms), type: number}
     type: TextBox
-    layout_properties: {grid_position: 'JPTROF,WFFXPQ'}
+    layout_properties: {grid_position: 'FIONZW,YBMLFI'}
   - name: label_8
     properties: {text: 'Address : '}
     type: Label
     layout_properties: {grid_position: 'YJKCGW,BMLFKX'}
   - name: text_area_1
-    properties: {placeholder: your address}
+    properties: {}
     type: TextArea
-    layout_properties: {grid_position: 'JFEMUZ,RUJJFO'}
+    layout_properties: {grid_position: 'CBUION,CZVCJT'}
   - name: label_3
     properties: {text: 'Do you need personal Training?', bold: false, spacing_below: medium,
       spacing_above: medium}
@@ -42,6 +42,7 @@ components:
     properties: {text: 'yes', bold: false}
     type: CheckBox
     layout_properties: {grid_position: 'ISCPDW,HSJIRM'}
+    event_bindings: {change: check_box_1_change}
   - name: button_1
     properties: {text: SUBMIT, align: left}
     type: Button

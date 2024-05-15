@@ -20,11 +20,11 @@ db_schema:
     - name: weight
       admin_ui: {width: 200, order: 1}
       type: number
-    - name: personal
-      admin_ui: {width: 200, order: 2}
-      type: bool
     - name: address
-      admin_ui: {width: 200, order: 3}
+      admin_ui: {width: 200, order: 2}
       type: string
+    - name: personal
+      admin_ui: {width: 200, order: 3}
+      type: bool
     title: gym
 renamed: true

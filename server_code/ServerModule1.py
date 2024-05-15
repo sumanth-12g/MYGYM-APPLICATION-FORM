@@ -11,7 +11,7 @@ import anvil.server
 # Here is an example - you can replace it with your own:
 #
 @anvil.server.callable
-def submit(name,weight,personal,address):
-  app_tables.gym.add_row(name=name,weight=weight,address=address,perosnal=personal)
+def submit(name,weight,address,personal):
+  app_tables.gym.add_row(name=name,weight=weight,address=address,personal=personal)
   return 42
 
