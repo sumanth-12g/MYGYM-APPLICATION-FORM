@@ -15,9 +15,9 @@ import anvil.server
 def submit(name,email,weight,address,personal):
   app_tables.gym.add_row(name=name,email=email,weight=weight,address=address,personal=personal)
   anvil.email.send(from_name="MYGYM FORM",
-                 to= email,
+                 to= "sumanthusorab@gmail.com",
                  subject="Your form",
-                 text= f"submission from {name}, the weight is {weight} and address is {address} and he needs personal training : {personal}")
+                 text= f"submission from {name} {email}, the weight is {weight} and address is {address} and he needs personal training : {personal}")
                 
 
 
