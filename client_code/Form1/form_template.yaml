@@ -1,7 +1,7 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {html: '@theme:standard-page.html', visible: true}
 components:
 - type: ColumnPanel
   properties: {col_widths: '{}'}
@@ -9,10 +9,61 @@ components:
   layout_properties: {slot: default}
   components:
   - name: label_1
-    properties: {text: 'ENTER A NAME :'}
+    properties: {text: 'ENTER YOUR NAME  : ', bold: false, spacing_above: medium,
+      spacing_below: medium}
     type: Label
     layout_properties: {grid_position: 'UVXZFI,SPIBCX'}
+  - name: text_box_1
+    properties: {placeholder: enter your name}
+    type: TextBox
+    layout_properties: {grid_position: 'LCXUJS,FQUYSI'}
+  - name: label_2
+    properties: {text: 'ENTER YOUR WEIGHT : ', bold: false}
+    type: Label
+    layout_properties: {grid_position: 'NXVCJO,QGVVDJ'}
+  - name: text_box_2
+    properties: {placeholder: enter your wight in ( kilograms )}
+    type: TextBox
+    layout_properties: {grid_position: 'JPTROF,WFFXPQ'}
+  - name: label_8
+    properties: {text: 'Address : '}
+    type: Label
+    layout_properties: {grid_position: 'YJKCGW,BMLFKX'}
+  - name: text_area_1
+    properties: {placeholder: your address}
+    type: TextArea
+    layout_properties: {grid_position: 'JFEMUZ,RUJJFO'}
+  - name: label_3
+    properties: {text: 'Do you need personal Training?', bold: false, spacing_below: medium,
+      spacing_above: medium}
+    type: Label
+    layout_properties: {grid_position: 'UIJEAX,HMOURV'}
+  - name: check_box_1
+    properties: {text: 'yes', bold: false}
+    type: CheckBox
+    layout_properties: {grid_position: 'ISCPDW,HSJIRM'}
+  - name: button_1
+    properties: {text: SUBMIT, align: left}
+    type: Button
+    layout_properties: {grid_position: 'MCJXSL,FCYAXJ'}
+    event_bindings: {click: button_1_click}
+- name: label_4
+  properties: {align: left, text: MYGYM, italic: false, bold: true, underline: true,
+    font: '20'}
+  type: Label
+  layout_properties: {slot: title}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components:
+  - name: label_5
+    properties: {text: Home, bold: true, font_size: 20}
+    type: Label
+    layout_properties: {}
+  - name: label_6
+    properties: {text: About, bold: true}
+    type: Label
+  - name: label_7
+    properties: {text: Contact Us, bold: true}
+    type: Label

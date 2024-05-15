@@ -1,12 +1,30 @@
-allow_embedding: false
-package_name: M3_App_1
-name: ''
-startup_form: Form1
-renamed: true
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
 dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+package_name: M3_App_1
+allow_embedding: false
+name: ''
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+startup_form: Form1
+db_schema:
+  gym:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: weight
+      admin_ui: {width: 200, order: 1}
+      type: number
+    - name: personal
+      admin_ui: {width: 200, order: 2}
+      type: bool
+    - name: address
+      admin_ui: {width: 200, order: 3}
+      type: string
+    title: gym
+renamed: true
